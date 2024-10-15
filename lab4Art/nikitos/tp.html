@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologie programistyczne</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="tp.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            No to jesteśmy w DOM-u
+        </h1>
+        <div class="nav">
+            <a href="filmy.html">
+                Filmy
+            </a>
+            <a href="tp.html" style="background-color: rgb(50, 50, 50);">
+                Technologie programistyczne
+            </a>
+            <a href="pw.html">
+                Przelicznik walut
+            </a>
+        </div>
+    </div>
+    <h1 style="display: flex; justify-content: center; margin: 0;">Technologie programistyczne</h1>
+    <div class="article">
+        <ol id="tech-list"></ol>
+        <div class="input-pole">
+            <h3>Nazwa Technologji</h3>
+            <input type="text" id="name">
+            <button type="button" id="add">
+                Dodaj Technologję
+            </button>
+            <button type="button" id="delete">
+                Usuń ostatnią
+            </button>
+            <button type="button" id="delete-all">
+                Usuń wszystkie
+            </button>
+        </div>
+    </div>
+
+    <script src="tp.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznik walut</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="pw.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            No to jesteśmy w DOM-u
+        </h1>
+        <div class="nav">
+            <a href="filmy.html">
+                Filmy
+            </a>
+            <a href="tp.html">
+                Technologie programistyczne
+            </a>
+            <a href="pw.html" style="background-color: rgb(50, 50, 50);">
+                Przelicznik walut
+            </a>
+        </div>
+    </div>
+    <div class="article">
+        <div class="walut-kalk">
+            <input type="text" id="num">
+            <button type="button" id="przelicz">
+                ⮃
+            </button>
+            <p id="out">1</p>
+        </div>
+        <select name="Waluta" id="wal" style="height: 27px; margin-top: 20px;">
+            <option value="Euro">Euro</option>
+            <option value="Dolar">Dolar</option>
+        </select>
+    </div>
+
+    <script src="pw.js"></script>
+</body>
+</html>

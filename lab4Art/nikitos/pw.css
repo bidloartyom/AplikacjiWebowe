@@ -1,0 +1,15 @@
+.article{
+    display: flex;  
+    justify-content: center;
+}
+
+.walut-kalk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.walut-kalk button{
+    width: 30px;
+}
+

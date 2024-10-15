@@ -1,0 +1,30 @@
+.article{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.inputPole{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.article input{
+    width: 200px;
+}
+
+.article button{
+    width: 208px;
+    margin-top: 30px;
+}
+
+.article table tbody tr:nth-child(odd){
+    background-color: lightgreen;
+    color: rgb(41,41,41);
+}
+
+.article table{
+    width: 400px;
+    border: 2px solid #414141;
+}

@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#contact-form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+#contact-form label, #contact-form input, #contact-form select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+
+#add-contact-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#add-contact-btn:hover {
+    background-color: #fffefe;
+}
+
+#add-contact-btn:active {
+    background-color: #ff0000;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#add-contact-btn:hover::before {
+    content: "Kliknij, aby dodać nowy kontakt";
+    position:sticky;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(121, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    top: -50px; 
+    left: 45%;
+    transform: translateX(-40%);
+    z-index: 1;
+}
+
+#pet-animation {
+    background-image: url('/lab5/images/pet.gif'); 
+    width: 200px; 
+    height: 200px; 
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    animation: run 4s infinite linear; 
+}
+
+@keyframes run {
+    0% { left: 0; }
+    50% { left: calc(100% - 100px); }
+    100% { left: 0; }
+}
+
+
+#contacts-table {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+}
+
+#contacts-table th, #contacts-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#contacts-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.family {
+    background-color: lightgreen;
+    color: black;
+}
+
+.friends {
+    background-color: lightblue;
+    color: black;
+}
+
+.work {
+    background-color: lightyellow;
+    color: black;
+}
+
+.acquaintances {
+    background-color: lightcoral;
+    color: black;
+}
